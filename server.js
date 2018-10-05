@@ -1,6 +1,6 @@
 var express = require("express");
 var mongoose = require("mongoose");
-var exphbs = require("express-handlebars");
+var expressHandlebars = require("express-handlebars");
 
 var PORT = process.env.PORT || 8080;
 
@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine("handlebars", expressHandlebars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 app.use(routes);
