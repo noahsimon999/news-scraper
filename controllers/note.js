@@ -1,5 +1,8 @@
+// imports models
 var db = require("../models");
 
+
+// finds products, then creates or deletes a note
 module.exports = {
   find: function(req, res) {
     db.Note.find({ _headlineId: req.params.id }).then(function(dbNote) {

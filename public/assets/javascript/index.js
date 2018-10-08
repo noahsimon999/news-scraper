@@ -45,15 +45,15 @@ $(document).ready(function() {
     var emptyAlert = $(
       [
         "<div class='alert alert-warning text-center'>",
-        "<h4>Uh Oh. Looks like we don't have any new articles.</h4>",
+        "<h4>Uh Oh. Looks like we don't have any new products.</h4>",
         "</div>",
         "<div class='card'>",
         "<div class='card-header text-center'>",
         "<h3>What Would You Like To Do?</h3>",
         "</div>",
         "<div class='card-body text-center'>",
-        "<h4><a class='scrape-new'>Try Scraping New Articles</a></h4>",
-        "<h4><a href='/saved'>Go to Saved Articles</a></h4>",
+        "<h4><a class='scrape-new'>Try Scraping New Products</a></h4>",
+        "<h4><a href='/saved'>Go to Saved Products</a></h4>",
         "</div>",
         "</div>"
       ].join("")

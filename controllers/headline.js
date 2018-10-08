@@ -1,5 +1,8 @@
+// imports models
 var db = require("../models");
 
+
+// find all headlines, delete products, and update products
 module.exports = {
   findAll: function(req, res) {
     db.Headline
